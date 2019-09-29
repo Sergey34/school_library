@@ -4,8 +4,11 @@ var tipuesearch = {
             "title": "Никольский",
             "text": "Tipue is a small web development studio based in North London.",
             "tags": "Никольский",
+            "image": "",
+            "note": "asd",
             "url": "http://www.tipue.com"
-        }, {
+        },
+        {
             "title": "Nikol'skij",
             "text": "Tipue is a small web development studio based in North London.",
             "tags": "Nikol'skij",
