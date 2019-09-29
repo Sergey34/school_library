@@ -1,0 +1,30 @@
+<!-- -&#45;&#45;
+title: Search
+description: "Search this site"
+layout: page
+permalink: /search/
+tipue_search_active: true
+exclude_from_search: true
+-&#45;&#45;-->
+
+<form action="/search/">
+    <div class="tipue_search_group">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
+        <button type="submit" class="tipue_search_button">
+            <div class="tipue_search_icon">&#9906;</div>
+        </button>
+    </div>
+</form>
+
+
+
+
+<div id="tipue_search_content"></div>
+
+<script>
+    $(document).ready(function () {
+        $('#tipue_search_input').tipuesearch();
+    });
+</script>
+
+
