@@ -7,24 +7,45 @@ tipue_search_active: true
 exclude_from_search: true
 -&#45;&#45;-->
 
-<form action="/school_library/search/">
-    <div class="tipue_search_group">
-        <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
-        <button type="submit" class="tipue_search_button">
-            <div class="tipue_search_icon">&#9906;</div>
-        </button>
+
+<header>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+    <script src="tipuesearch/tipuesearch_set.js"></script>
+    <script src="tipuesearch/tipuesearch.min.js"></script>
+</header>
+<body>
+
+
+
+<div class="post-content">
+    <form action="/school_library/search/">
+        <div class="tipue_search_left"><img src="/school_library/assets/tipuesearch/search.png"
+                                            class="tipue_search_icon"></div>
+        <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}"
+                                               title="At least 3 characters" required=""></div>
+        <div style="clear: both;"></div>
+    </form>
+
+    <div id="tipue_search_content" style="">
+
     </div>
-</form>
 
+    <script>
+        $(document).ready(function () {
+            $('#tipue_search_input').tipuesearch();
+        });
+    </script>
 
-
-
-<div id="tipue_search_content"></div>
+</div>
 
 <script>
     $(document).ready(function () {
         $('#tipue_search_input').tipuesearch();
     });
 </script>
-
+</body>
 
