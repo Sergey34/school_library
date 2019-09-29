@@ -3,7 +3,7 @@ var tipuesearch = {
         {
             "title": "Tipue",
             "text": "Tipue is a small web development studio based in North London.",
-            "tags": "1_class, 2_class",
+            "tags": "1 class, 2 class",
             "url": "http://www.tipue.com"
         },
         {
